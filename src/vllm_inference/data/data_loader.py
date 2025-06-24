@@ -124,7 +124,7 @@ def load_tvgbench(split="default"):
             in the format {'video': str, 'duration': float, 'timestamp': list[float, float], 'sentence': str, 'qid': str}.
             Returns an empty list if the file does not exist or cannot be parsed.
     """
-    data_path = "./dataset/trainval/tvgbench.json"
+    data_path = "./dataset/timer1/annotations/tvgbench.json"
 
     with open(data_path, "r") as f:
         raw_data = json.load(f)

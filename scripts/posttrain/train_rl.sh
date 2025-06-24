@@ -18,7 +18,7 @@ CUDA_VISIBLE_DEVICES=3 torchrun --nproc_per_node="1" \
     --deepspeed scripts/zero3_offload.json \
     --output_dir $OUTDIR \
     --model_name_or_path $BASE_MODEL_NAME_OR_PATH \
-    --train_data_path ./dataset/trainval/train_debug.json \
+    --train_data_path ./dataset/timer1/annotations/train_2k5.json \
     --dataset_name xxx \
     --max_prompt_length 8192 \
     --max_completion_length 200 \

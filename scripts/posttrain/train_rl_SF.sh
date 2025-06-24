@@ -9,7 +9,7 @@ export PYTHONPATH=".:$PYTHONPATH"
 export DEBUG_MODE="true"
 
 # 初始路径设置
-INIT_DATA_PATH=dataset/trainval/train_2k5.json
+INIT_DATA_PATH=dataset/timer1/annotations/train_2k5.json
 INIT_MODEL_PATH="./ckpts/Qwen2.5-VL-3B-Instruct"
 
 for FILTER_INDEX in {0..4}; do
