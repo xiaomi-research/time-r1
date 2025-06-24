@@ -15,7 +15,17 @@ or you can download and organize the original data from [VTG-IT](https://hugging
 folder structure:
 ```
 dataset                                                                           
-├─ DATASET                                                                    
+├─ timer1          
+│  ├─ annotations          
+│  │  ├─ train_2k5.json                                                              
+│  │  └─ tvgbench.json    
+│  ├─ videos                                                                      
+│  │  ├─ timerft_data                                                                 
+│  │  |  ├─ xxx.mp4       
+│  │  │  └─ ...
+│  │  ├─ tvgbench_data                                                                      
+│  │  |  ├─ xxx.mp4      
+│  │  │  └─ ...
 ├─ activitynet                                                                    
 │  ├─ annotations                                                                 
 │  │  ├─ sentence_temporal_grounding                                              
@@ -56,10 +66,7 @@ dataset
 │  │  └─ test-00000-of-00001.parquet               
 │  ├─ data                                       
 │  │  ├─ _8lBR0E_Tx8.mp4     
-│  │  └─ ...
-└─ trainval                                                                       
-   ├─ train_2k5.json                                                              
-   └─ tvgbench.json                                                               
+└─ └─ └─ ...                                                          
 ```
 
 ### ActivityNet

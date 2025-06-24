@@ -148,7 +148,7 @@ We thank the following projects: [TRACE](https://github.com/gyxxyg/TRACE), [R1-V
 
 ## Citation
 
-If you find our work useful, please consider cite our paper :).
+If you find our work useful, please consider cite our paper :)
 
 
 ```bibtex
