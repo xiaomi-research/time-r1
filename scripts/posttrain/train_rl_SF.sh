@@ -9,10 +9,10 @@ export PYTHONPATH=".:$PYTHONPATH"
 export DEBUG_MODE="true"
 
 # 初始路径设置
-INIT_DATA_PATH=dataset/trainval/train_debug.json
-INIT_MODEL_PATH="./ckpts/Qwen2.5-VL-3B-Instruct_my"
+INIT_DATA_PATH=dataset/trainval/train_2k5.json
+INIT_MODEL_PATH="./ckpts/Qwen2.5-VL-3B-Instruct"
 
-for FILTER_INDEX in {1..4}; do
+for FILTER_INDEX in {0..4}; do
     # 设置动态变量
     export WANDB_NAME="${EXP_NAME}_0070_filter${FILTER_INDEX}"
     
@@ -99,10 +99,11 @@ for FILTER_INDEX in {1..4}; do
             --split $DATA_PATH \
             --datasets tvgbench_filter \
             --output_dir "$vllm_output_dir" \
-            --use_r1_thinking_prompt &
+            --use_r1_thinking_prompt \
+            --use_vllm_inference &
     done
     wait
-    数据处理
+    # 数据处理
     python src/vllm_inference/calc_difficulty.py --input $vllm_output_dir \
         --split $DATA_PATH \
         --output_dir "./"
