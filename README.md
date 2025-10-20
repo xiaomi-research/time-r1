@@ -21,6 +21,10 @@ Note: TimeZero is the original version
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/www-Ye/Time-R1) [![github](https://img.shields.io/github/stars/www-Ye/Time-R1.svg?style=social)](https://github.com/www-Ye/Time-R1)[![arXiv](https://img.shields.io/badge/Arxiv-2503.13377v1-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2503.13377v1) <br>
     
 
+## TODO List
+
+- [ ] Base model support for MiMo-VL and Intern3-VL
+
 ## Overview
 
 ### Contributions of Time-R1
