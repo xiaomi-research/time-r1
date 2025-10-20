@@ -296,7 +296,6 @@ prompt-toolkit==3.0.39
 proto-plus==1.26.1
 protobuf==3.20.0
 psutil 
-ptxcompiler
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py-cpuinfo==9.0.0
